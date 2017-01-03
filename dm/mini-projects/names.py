@@ -2,6 +2,6 @@
 
 response = raw_input("What's your name?\n--> ")
 
-# Print out a greeting 10 times.
-for i in range(1, 10):
+# Print out a greeting 20 times.
+for i in range(1, 20):
     print "Hello, %s. Nice to meet you." % response
