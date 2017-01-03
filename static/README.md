@@ -1,1 +1,2 @@
-Static files to be served by a Flask application running in ../local (or elsewhere).
+# Static files
+This is a place to put static files to be served.
