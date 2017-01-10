@@ -1,2 +1,2 @@
-for x in range(5, 105, 5):
+for x in range(5, 104, 5):
     print x
