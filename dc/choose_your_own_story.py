@@ -69,6 +69,7 @@ if user_input == "d":
     print "a apple a day makes the doctor go away"
     sick = raw_input ("Jk. Awwwwww ur sick! what's wrong?\n--->")
     print "Wow that sounds serious"
+    ddf
 
 
 
