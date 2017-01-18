@@ -1,0 +1,12 @@
+<html>
+<body>
+<img src="placeholder" alt="placeholder" width="250" height="250">
+
+<p>username</p>
+<p>age</p>
+<p>location and other contact info</p>
+
+<p>bio?</p> <button type="button">Edit</button>
+
+</body>
+</html>
