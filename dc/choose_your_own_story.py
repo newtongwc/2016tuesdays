@@ -1,6 +1,6 @@
 print "This is a choose your own story called Ugh"
 
-print "a) ugh why me b) ugh why school c)ugh why life d)ugh i'm sick"
+print "a) ugh why me b) ugh why school c)ugh why life"
 
 user_input = raw_input ("Choose one of the story starters for ugh( choose a letter\n--->")
 
@@ -64,12 +64,6 @@ if user_input == "c":
 
     if answer == "5":
         print "I don't know what to say to you, sorry you must be going through a hard time in your life..."
-
-if user_input == "d":
-    print "a apple a day makes the doctor go away"
-    sick = raw_input ("Jk. Awwwwww ur sick! what's wrong?\n--->")
-    print "Wow that sounds serious"
-    ddf
 
 
 
