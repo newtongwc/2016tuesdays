@@ -10,40 +10,62 @@
 <a href="http://localhost:63342/2016tuesdays/es/Stand%20in%20job%20browser.html?_ijt=3204p9oldf0vr3e0o6gg7ba9ir"><font color="red">Go back to job browser</font></a>
 <br>
 <br>
+<div style="float: left; width: 50%;">
 <form>
     <font color="red">Job Name:<br>
-  <input type="text" name="Job Name"><br>
+    <textarea inputmode="text" name="Job Name" cols="75">
+
+ </textarea>
+        <br>
+        </font>
 </form>
 <br>
 <form>
     <font color="red">Job Description:</font><br>
-    <input type="text" name="Job Description"><br>
-</form>
-<br>
-<form>
-  <input type="radio" name="l option" value="default l">
-    Default Location
-    <input type="radio" name="l option" value="new ci">
-    New Location
+    <textarea inputmode="text" cols="75" rows="10" name ="Job Description">
+
+</textarea>
+    <br>
 </form>
 <form>
-    <font color="red">Job Location:<br>
-    <input type="text" name="Job Location"><br>
-</form>
-<br>
-<form action= print "Newton, Ma">
-  <input type="radio" name="ci option" value="default ci">
-    Default Contact Info
-    <input type="radio" name="ci option" value="new ci">
-    New Contact Info
-</form>
-<form action="action_page.php" method="get">
-    <font color="red">Contact Info:<br>
-    <input type="text" name="Contact Info"><br>
+    <font color="red">Job Pay:</font><br>
+    <textarea inputmode="text" cols="75" rows="10" name ="Job Pay">
+
+</textarea>
 </form>
     <br>
+</div>
+</form>
+</div>
+<div style= "float: right; width: 50%;">
+<form>
+    <font color="red">Job Location:</font><br>
+ <!--          <select name="l new or default">
+             <option value="Default l">Default Location</option>
+              <option value="New l">New Location</option>
+            </select> -->
+    <textarea inputmode="text" cols="75" rows="10" name="Job Location">
+Default Location
+</textarea>
+</form>
+<br>
+<form>
+   <font color="red">Contact Info:<br>
+<!--         <select name="ci new or default">
+            <option value="Default ci">Default Contact Info</option>
+            <option value="New ci">New Contact Info</option>
+        </select> -->
+    <textarea inputmode="text" cols="75" rows="10" name="Contact Info">
+Default Contact Info
+</textarea>
+    </font>
+</form>
+    <br>
+
 <form action="http://localhost:63342/2016tuesdays/es/End%20Page.html?_ijt=628ogqicnjpj244rfvedrl4vf0.php">
   <input type="submit" value="Post">
 </form>
+</div>
+</body>
 </body>
 </html>
