@@ -1,12 +1,21 @@
 <html>
 <body>
-<img src="placeholder" alt="placeholder" width="250" height="250">
+<style>
+body {
+        background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/08/cloud_desktop_background.jpg");
+}
+</style>
+<img src="http://rsmg.pbsrc.com/albums/v738/LadyFire/Pink%20Things/lolly.gif~c200" alt="placeholder photo" width="250" height="250">
+<img src="http://www.iconarchive.com/download/i99426/webalys/kameleon.pics/Candy.ico" alt="placeholder icon" width="100" height="100">
+<p><button type="button">Edit photos</button></p>
 
-<p>username</p>
-<p>age</p>
-<p>location and other contact info</p>
+<div align = "left"></div><p><b>SusanSallySue1932 (username)</p></b>
+<p>32 (age)</p>
+<p>Newton, MA; suesally@susan.com; 617-666-6660 (location and other contact info)</p>
 
-<p>bio?</p> <button type="button">Edit</button>
+<p>Has many leaves. Needs leaves to be swept. (bio about self?)</p> <button type="button">Edit</button>
+<p><button type="button">Change Background</button></p>
 
 </body>
 </html>
+
