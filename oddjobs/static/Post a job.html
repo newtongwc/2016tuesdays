@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>Post a Job!</title>
 </head>
-<body>
 <body background="http://eskipaper.com/images/bubbles-8.jpg">
 <h1><font color="purple">You can post a job for others to do here!</font></h1>
-<a href="http://localhost:63342/2016tuesdays/oddjobs/static/Stand%20in%20job%20browser.html?_ijt=9pf6rn25chin9thqtg5sgak2fp"><font color="red">Go back to job browser</font></a>
+<a href="http://localhost:63342/2016tuesdays/oddjobs/static/View_jobs_offered.html?_ijt=9heqod4rjh95tqq6e768aif42g"><font color="red">Go back to job browser</font></a>
 <br>
 <br>
 <div style="float: left; width: 50%;">
@@ -34,8 +33,6 @@
 </form>
     <br>
 </div>
-</form>
-</div>
 <div style= "float: right; width: 50%;">
 <form>
     <font color="red">Job Location:</font><br>
@@ -55,8 +52,7 @@ Default Location
             <option value="Default ci">Default Contact Info</option>
             <option value="New ci">New Contact Info</option>
         </select> -->
-    <textarea inputmode="text" cols="75" rows="10" name="Contact Info">
-Default Contact Info
+    <textarea inputmode="text" cols="75" rows="10" name="Contact Info" id="D_ci">
 </textarea>
     </font>
 </form>
@@ -66,6 +62,8 @@ Default Contact Info
   <input type="submit" value="Post">
 </form>
 </div>
-</body>
+<script>var ci = prompt("What would you like your default contact info to be?")
+document.getElementById("D_ci").innerHTML= ci</script>
 </body>
 </html>
+
