@@ -17,6 +17,11 @@ def Topic():
 def addRegion():
     print("I got it!")
     print (request.form['drink'])
+    print (request.form['Kids meal'])
+    print (request.form['meal'])
+    print (request.form['Platter'])
+    print (request.form['Side'])
+    return app.send_static_file('Topic.html')
 
 
 app.run()
