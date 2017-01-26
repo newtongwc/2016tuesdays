@@ -1,6 +1,6 @@
 print "This is a choose your own story called Ugh"
 
-print "a) ugh why me b) ugh why school c)ugh why life"
+print "a) ugh why me b) ugh why school c)ugh why life d) ugh why boredom"
 
 user_input = raw_input ("Choose one of the story starters for ugh( choose a letter\n--->")
 
@@ -54,7 +54,7 @@ if user_input == "c":
         print " Hey your life must not be that bad! Think of how lucky you are to only have a one!"
 
     if answer == "2":
-        print "It's all right, you'll survive at a 2. Think of all those misfortunate people on the streets?"
+        print "It's all right, you'll survive at a 2. Think of all those unfortunate people on the streets"
 
     if answer == "3":
         print "Wow, a three that must be bad....."
@@ -64,3 +64,22 @@ if user_input == "c":
 
     if answer == "5":
         print "I don't know what to say to you, sorry you must be going through a hard time in your life..."
+
+if user_input == "d":
+    print "I know right "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
