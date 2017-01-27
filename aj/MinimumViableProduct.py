@@ -13,14 +13,21 @@ app = Flask('Adventure', static_url_path='')
 def Topic():
     return app.send_static_file('Topic.html')
 
+@app.route("/", methods=['POST'])
+def signs():
+    print (request.form['name'])
+
+
 @app.route("/this", methods=['POST'])
 def addRegion():
     print("I got it!")
-    print (request.form['drink'])
-    print (request.form['Kids meal'])
-    print (request.form['meal'])
-    print (request.form['Platter'])
-    print (request.form['Side'])
+    print (request.form['name'])
+    a = (request.form['drink'])
+    b = (request.form['Kids meal'])
+    c = (request.form['Meal'])
+    d = (request.form['Platter'])
+    e = (request.form['Side'])
+    print (a+", "+b+", "+c+", "+d+", "+e)
     return app.send_static_file('Topic.html')
 
 
