@@ -22,6 +22,7 @@ def signs():
 def addRegion():
     print("I got it!")
     print (request.form['name'])
+    print (request.form['allergies'])
     a = (request.form['drink'])
     b = (request.form['Kids meal'])
     c = (request.form['Meal'])
