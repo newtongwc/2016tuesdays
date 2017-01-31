@@ -15,14 +15,19 @@ app = Flask('Reverser', static_url_path='')
 def reverse():
     return app.send_static_file('reverse_home.html')
 
+# When the user goes to the website with /reversed after the base URL, show the
+# reverse_result.html template, customized based on what they entered in the form.
+# Note "/reversed" matches the form action in reverse_home.html.
 @app.route("/reversed")
 def result():
+    # Get the URL parameter named forward, and store it in a variable named forward.
+    # If the URL doesn't have a parameter named forward, it'll default to '' - the empty string.
     forward = request.args.get('forward', '')
-    # reversed() is a built-in python function that gives us a backward version of forward, as a list.
-    # So if forward = "hello" then reversed(forward) = ["o", "l", "l", "e", "h"].
-    # ''.join() joins a list together into a string by putting '' - that is, nothing - between each pair of list
-    # entries next to each other.  You can also join with something besides '', like ', ' or ' and '.
+    # Python code to generate the backward version of the string and store it in a variable named backward.
+    # The details of this aren't important for understanding Flask handlers.
     backward = ''.join(reversed(forward))
+    # Render the reverse_result.html template using our forward variable for the template's forward variable,
+    # and our backward variable for the template's backward variable.
     return render_template('reverse_result.html', forward=forward, backward=backward)
 
 app.run()
