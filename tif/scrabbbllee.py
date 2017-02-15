@@ -9,4 +9,9 @@ for letters in word:
     print totaL
     #sum (total)
 
+
+
+    print "Add the following numbers:"
+total = 0
+
 print '-This was made by kurliswirl.'
