@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>States Game</title>
+</head>
+<body>
+My favourite state is {{a_state}}!
+<form action="/letter">
+Enter a single letter: <input type="text" name="user_letter"/>
+  <input type="submit" value="Go!"/>
+</form>
+These states start with the letter {{user_letter}}:
+<br>
+{{list_of_states}}
+</body>
+</html>
