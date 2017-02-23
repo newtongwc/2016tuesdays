@@ -15,10 +15,10 @@ class JobCollection:
         """returns a specific job/selects it"""
 
     def remove_job(self, Job_id):
-    """ removes the job (id) from the collection"""
+        """ removes the job (id) from the collection"""
 
     def update_job(self, Job):
-    """ updates the job that is yours"""
+        """ updates the job that is yours"""
 
     def owners_jobs(self, name):
         """returns all jobs under this name"""

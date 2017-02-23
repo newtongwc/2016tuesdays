@@ -1,12 +1,12 @@
-from Users import Users
-from UserCollection import UserCollection
+from users import Users
+from user_collection import UserCollection
 
 import pytest
 
 
 def test_empty_collection():
     collection = UserCollection()
-    users = UserCollection.get_users()
+    users = collection.get_users()
     assert len(users) == 0
     """
 def test_add_job():
@@ -26,3 +26,4 @@ def test_add_job():
     JobCollection.add_job(a_copy)
     assert len(JobCollection) == 2
     """
+pytest.main()

@@ -6,7 +6,7 @@ import pytest
 
 def test_empty_collection():
     collection = JobCollection()
-    jobs = JobCollection.get_jobs()
+    jobs = collection.get_jobs()
     assert len(jobs) == 0
 
 def test_add_job():

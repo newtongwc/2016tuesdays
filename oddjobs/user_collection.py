@@ -1,4 +1,4 @@
-from Users import Users
+from users import Users
 
 class UserCollection:
 
@@ -16,7 +16,7 @@ class UserCollection:
         """returns a specific job/selects it"""
 
     def remove_user(self, Users_userid):
-    """ removes the job (id) from the collection"""
+        """ removes the job (id) from the collection"""
 
     def update_user(self, Users):
-    """ updates the job that is yours"""
+        """ updates the job that is yours"""
