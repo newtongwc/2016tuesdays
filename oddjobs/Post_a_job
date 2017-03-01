@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post a Job!</title>
+</head>
+<body background="http://eskipaper.com/images/bubbles-8.jpg">
+<h1><font color="purple">You can post a job for others to do here!</font></h1>
+<a href="http://localhost:63342/2016tuesdays/oddjobs/static/View_jobs_offered.html?_ijt=9heqod4rjh95tqq6e768aif42g"><font color="red">Go back to job browser</font></a>
+<br>
+<br>
+<a href="http://localhost:63342/2016tuesdays/oddjobs/static/homepage.html?_ijt=klbj98177isbtf7ff0c19qnl8o">Go back to homepage</a>
+<br>
+<br>
+<div style="float: left; width: 50%;">
+<form>
+    <font color="red">Job Name:<br>
+<textarea inputmode="text" name="Job Name" rows ="1" cols="75">
+</textarea>
+        <br>
+        </font>
+</form>
+<br>
+<form>
+    <font color="red">Job Description:</font><br>
+    <textarea inputmode="text" cols="75" rows="10" name ="Job Description">
+
+</textarea>
+    <br>
+</form>
+<form>
+    <font color="red">Job Pay:</font><br>
+    <textarea inputmode="text" cols="75" rows="10" name ="Job Pay">
+
+</textarea>
+</form>
+    <br>
+</div>
+<div style= "float: right; width: 50%;">
+<form>
+    <font color="red">Job Location:</font><br>
+ <!--          <select name="l new or default">
+             <option value="Default l">Default Location</option>
+              <option value="New l">New Location</option>
+            </select> -->
+    <textarea inputmode="text" cols="75" rows="10" name="Job Location">
+Default Location
+</textarea>
+</form>
+<br>
+<form>
+   <font color="red">Contact Info:<br>
+<!--         This is if we want to do a drop down menu
+    <select name="ci new or default">
+            <option value="Default ci">Default Contact Info</option>
+            <option value="New ci">New Contact Info</option>
+        </select> -->
+    <textarea inputmode="text" cols="75" rows="10" name="Contact Info" id="D_ci">
+</textarea>
+    </font>
+</form>
+    <br>
+
+<form action="End%20Page.html">
+  <input type="submit" value="Post">
+</form>
+</div>
+<script>var ci = prompt("What would you like your default contact info to be?")
+document.getElementById("D_ci").innerHTML= ci</script>
+</body>
+</html>
+
