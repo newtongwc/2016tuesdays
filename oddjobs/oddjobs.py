@@ -5,10 +5,10 @@ from flask import Flask
 # interpreted as requests for files from the "static" directory.
 app = Flask(__name__, static_url_path='')
 
-# Tell Flask to send the static file static/index.html if no path is given.
+# Tell Flask to point users to the home page if no path is given.
 @app.route("/")
-def show_index():
-    return app.send_static_file('index.html')
+def show_home_page():
+    return app.send_static_file('homepage.html')
 
 
 if __name__ == "__main__":
