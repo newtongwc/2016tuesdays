@@ -15,8 +15,8 @@ def show_home_page():
 
 @app.route("/view_jobs_offered")
 def jobs():
-    list_of_jobs = [ "https://s-media-cache-ak0.pinimg.com/736x/0d/f4/5b/0df45b300b9246457dc55d4250ca2c73.jpg"
-    Llama Walking]
+    list_of_jobs = [ Llama_Walking = "https://s-media-cache-ak0.pinimg.com/736x/0d/f4/5b/0df45b300b9246457dc55d4250ca2c73.jpg"
+    ]
     return render_template("view_jobs_offered.html")
 
 @app.route("/login")
