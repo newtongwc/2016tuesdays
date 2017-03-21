@@ -19,7 +19,7 @@ def wordScramble():
     print "Scrambled: %s" % scramble
     guess = raw_input("What word is this? ")
     guess = str.lower(guess)
-    if guess == word:
+    if guess == words[index]:
       print "\nYou are correct!\n"
       score = score + 1
       print "\nYour score is %i\n" % score
