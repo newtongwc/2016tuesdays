@@ -1,0 +1,17 @@
+var randomQuad = function(x, y, w, h, thickness) {
+    var blueColor = color(0, 0, 255);
+    var greenColor = color(0, 255, 0);
+    var redColor = color(255, 0, 0);
+    var yellowColor = color(255, 213, 0);
+    var colors = [blueColor, greenColor, redColor, yellowColor];
+    stroke(colors[random(0, colors.length - 1)]);
+    strokeWeight(thickness);
+    rect(x, y, w, h);
+ 
+};
+
+for(var i = 0; i < 10; i++) {
+
+    var square = random(0, 200);
+    randomQuad(random(0, 400), random(0, 400), square, square, random(0, 50));
+}
