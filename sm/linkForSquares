@@ -1,1 +1,43 @@
 https://www.khanacademy.org/computer-programming/new-program/5089770114187264
+
+var randomQuad = function(x, y, w, h, thickness) {
+    //colors for a manually created color scheme. It is commented out for now.
+    /**
+    var blueColor = color(0, 0, 255);
+    var greenColor = color(0, 255, 0);
+    var redColor = color(255, 0, 0);
+    var yellowColor = color(255, 213, 0);
+    var blackColor = color(0, 0, 0);
+    var grayColor = color(140, 140, 140);
+    var purpleColor = color(132, 0, 255);
+    var orangeColor = color(255, 153, 0);
+    var lightGrayColor = color(179, 179, 179);
+    var colors = [blueColor, greenColor, redColor, yellowColor, blackColor, grayColor, purpleColor, orangeColor];
+    **/
+    var randR = random(0, 255);
+    randR = floor(randR);
+    var randG = random(0, 255);
+    randG = floor(randG);
+    var randB = random(0, 255);
+    randB = floor(randB);
+    var randColor = color(randR, randG, randB); //creates a random color
+    
+    //creates the square with the parameters from the function when it is called.
+    stroke(randColor);
+    noFill();
+    strokeWeight(thickness);
+    rect(x, y, w, h);
+ 
+};
+
+//creates 10 squares
+for(var i = 0; i < 10; i++) {
+    //creates a random side length
+    var square = random(0, 200);
+    
+    //creates a square with a random size, location, and thickness
+    randomQuad(random(0, 200), random(0, 400 - square), square, square, random(5, 20));
+}
+
+fill(0, 0, 0);
+text("Code by Sara. Concept by Sara and Stella.", 305, 358, 95, 157);
