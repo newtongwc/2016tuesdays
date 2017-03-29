@@ -1,5 +1,7 @@
 https://www.khanacademy.org/computer-programming/new-program/5089770114187264
 
+https://www.khanacademy.org/computer-programming/spin-off-of-new-program/5559462503186432 Revised version
+
 var randomQuad = function(x, y, w, h, thickness) {
     //colors for a manually created color scheme. It is commented out for now.
     /**
