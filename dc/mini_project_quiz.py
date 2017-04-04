@@ -13,12 +13,12 @@ app = Flask('Reverser', static_url_path='')
 # instead (found in ./static/reverse_home.html)
 @app.route("/")
 def reverse():
-    return app.send_static_file('reverse_home.html')
+    return app.send_static_file('mini_project_quiz.html')
 
 # When the user goes to the website with /reversed after the base URL, show the
 # reverse_result.html template, customized based on what they entered in the form.
 # Note "/reversed" matches the form action in reverse_home.html.
-@app.route("/reversed")
+@app.route("/grade")
 def result():
     # Get the URL parameter named forward, and store it in a variable named forward.
     # If the URL doesn't have a parameter named forward, it'll default to '' - the empty string.
@@ -28,6 +28,6 @@ def result():
     backward = ''.join(reversed(forward))
     # Render the reverse_result.html template using our forward variable for the template's forward variable,
     # and our backward variable for the template's backward variable.
-    return render_template('reverse_result.html', forward=forward, backward=backward)
+    return render_template('grade_4_quiz.html', forward=forward, backward=backward)
 
 app.run()
