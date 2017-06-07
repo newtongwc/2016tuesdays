@@ -1,5 +1,4 @@
 # Hunt the Unicorn, by Gregory Yob. Written in 1973
-# This Python port by David Miller
 
 import random
 import sys
