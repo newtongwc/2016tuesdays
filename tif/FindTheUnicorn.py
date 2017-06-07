@@ -1,16 +1,12 @@
-# Hunt the Unicorn, by Gregory Yob. Written in 1973
-
 import random
 import sys
 
-# Define game variables. They are populated later.
 neighbors = [None]*21
 DevilBunny_locations = [None]*2
 BottomlessHole_locations = [None]*2
 Unicorn_location = None
 location = None
 
-# Main game loop
 def main():
   maybe_print_instructions()
   setup_map()
@@ -24,8 +20,6 @@ def main():
     if not again:
       sys.exit()
 
-# Choose locations for DevilBunnys, BottomlessHoles, Unicorn. At the beginning, no two objects are in the
-# same room. As the game evolves, you and the Unicorn can move.
 def place_objects():
   global location, Unicorn_location, DevilBunny_locations, BottomlessHole_locations
   rooms = range(1, 21)
@@ -94,8 +88,7 @@ def move_Unicorn():
 def play_shoot():
   num_rooms = get_num_rooms()
   path = [location]
-  # The limit is one more than num_rooms because we put the initial location
-  # on the path.
+  
   while len(path) < num_rooms + 1:
     room = get_room()
     if len(path) >= 2 and room == path[-2]:
@@ -104,9 +97,7 @@ def play_shoot():
     path.append(room)
   return resolve_arrow(path)
 
-# Returns True if an arrow in this room ends the game in any way.
 def resolve_arrow(target_rooms):
-  # Remove the initial room and use it at the arrow starting point.
   arrow_location = target_rooms.pop(0)
   for room in target_rooms:
     if room in neighbors[arrow_location]:
@@ -115,7 +106,6 @@ def resolve_arrow(target_rooms):
       arrow_location = random.randint(1, 20)
     if check_for_hit(arrow_location):
       return True
-  # None of the rooms had you or the Unicorn.
   print "Missed, but you woke the Unicorn!"
   return move_Unicorn()
 
@@ -180,7 +170,6 @@ def safe_string_to_int(s):
   except ValueError:
     return 0
 
-# The rooms lie on the vertices of a dodecahedron.
 def setup_map():
   neighbors[1] = [2,5,8]
   neighbors[2] = [1,3,10]
