@@ -7,6 +7,9 @@ word = raw_input ("Write a word to find out what it's worth in Scrabble! (IN ALL
 
 for letters in word:
     total = value_of_tile [letters]
+
+    print total
+
 #THIS DOES NOT WORK
 
 #IM TOO LAZY TO FIX IT
